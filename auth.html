@@ -12,12 +12,88 @@
             font-family: 'Shabnam', sans-serif;
             direction: rtl;
         }
+
+        a {
+            font-family: 'Shabnam', sans-serif;
+            direction: rtl;
+        }
+
+        .ui button {
+            font-family: 'Shabnam', sans-serif;
+            width: 300px;
+        }
     </style>
-    <!-- Add custom stylesheet here -->
 </head>
 
 <body>
-    <!-- Body Here -->
+
+    <div class="ui container">
+        <div class="ui container" style="width: 330px;">
+            <div class="ui top attached tabular menu" id="menu">
+                <a class="item active" onclick="registerOnClick()" id="register-item" style="width: 165px;">
+                    ثبت نام
+                </a>
+                <a class="item" onclick="loginOnClick()" id="login-item" style="width: 166px;">
+                    ورود
+                </a>
+            </div>
+
+            <div id="register-box">
+                <div class="ui bottom attached segment" style="height: 350px;">
+                    <form class="ui form">
+                        <div class="field">
+                            <input type="text" id="register-email" placeholder="ایمیل">
+                        </div>
+                        <div class="field">
+                            <input type="text" id="register-password" placeholder="رمز عبور">
+                        </div>
+                        <div class="field">
+                            <input type="text" id="register-password-confirmation" placeholder="نکرار رمز عبور">
+                        </div>
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <label>قوانین و شرایط را می پذیرم.</label>
+                                <input type="checkbox" tabindex="0" class="hidden">
+                            </div>
+                        </div>
+                        <button class="ui button" type="submit">ثبت نام</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="login-box" style="display: none;">
+                <div class="ui bottom attached segment" style="height: 350px;">
+                    <form class="ui form">
+                        <div class="field">
+                            <input type="text" id="login-email" placeholder="ایمیل">
+                        </div>
+                        <div class="field">
+                            <input type="text" id="login-password" placeholder="رمز عبور">
+                        </div>
+
+                        <button class="ui button" type="submit">ثبت نام</button>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+                function loginOnClick() {
+                    document.getElementById("register-box").style.display = "none";
+                    document.getElementById("login-box").style.display = "block";
+                    document.getElementById("register-item").className = "item";
+                    document.getElementById("login-item").className = "item active";
+                }
+
+                function registerOnClick() {
+                    document.getElementById("register-box").style.display = "block";
+                    document.getElementById("login-box").style.display = "none";
+                    document.getElementById("register-item").className = "item active";
+                    document.getElementById("login-item").className = "item";
+                }
+            </script>
+
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
