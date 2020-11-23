@@ -1,0 +1,68 @@
+body {
+    font-family: "Shabnam", sans-serif;
+    direction: rtl;
+    margin: 0px;
+}
+
+.header {
+    margin: 0px auto;
+    background-color: #e17055;
+    height: 55px;
+    font-size: 120%;
+}
+
+.header-right {
+    float: right;
+    list-style: none;
+    margin-right: 2%;
+}
+
+.header-left {
+    float: left;
+    list-style: none;
+    margin-left: 2%;
+}
+
+.header-right li {
+    display: inline-flex;
+    margin: 20px 50px;
+}
+
+.header-left li {
+    display: inline-flex;
+    margin: 20px 50px;
+}
+
+.header ul li a :visited,
+.header ul li a :hover,
+.header ul li a {
+    font-family: "Shabnam", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    float: right;
+}
+
+.search-icon {
+    display: inline-block;
+    font-family: "Shabnam", sans-serif;
+    padding: 5px 15px;
+    vertical-align: middle;
+    height: auto;
+    color: white;
+    background-color: #4c190d;
+}
+
+.form-control {
+    width: 80%;
+    font-family: "Shabnam", sans-serif;
+    font-size: 80%;
+    opacity: 60%;
+    padding: 0 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
