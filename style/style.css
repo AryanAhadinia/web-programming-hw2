@@ -1,0 +1,23 @@
+@import url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css');
+
+body {
+    font-family: 'Shabnam', sans-serif;
+    direction: rtl;
+}
+
+a {
+    font-family: 'Shabnam', sans-serif;
+    direction: rtl;
+}
+
+#register, #login, #register-email, #register-password, #register-password-confirmation, #login-email, #login-password {
+    font-family: 'Shabnam', sans-serif;
+}
+
+#register, #login {
+    width: 300px;
+}
+
+.ui, .button {
+    font-family: 'Shabnam', sans-serif;
+}

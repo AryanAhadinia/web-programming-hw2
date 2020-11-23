@@ -3,96 +3,100 @@
 
 <head>
     <title>ورود / ثبت نام</title>
-    <link rel="shortcut icon" type="image/png" href=media/favicon.png />
+    <link rel="shortcut icon" type="image/png" href=media/favicon.png>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href='https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css' rel='stylesheet' type='text/css'>
-    <style>
-        body {
-            font-family: 'Shabnam', sans-serif;
-            direction: rtl;
-        }
-
-        a {
-            font-family: 'Shabnam', sans-serif;
-            direction: rtl;
-        }
-
-        .ui button {
-            font-family: 'Shabnam', sans-serif;
-            width: 300px;
-        }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-    <div class="ui container">
-        <div class="ui container" style="width: 330px;">
-            <div class="ui top attached tabular menu" id="menu">
-                <a class="item active" onclick="registerOnClick()" id="register-item" style="width: 165px;">
-                    ثبت نام
-                </a>
-                <a class="item" onclick="loginOnClick()" id="login-item" style="width: 166px;">
-                    ورود
-                </a>
-            </div>
+    <div class="ui segment">
 
-            <div id="register-box">
-                <div class="ui bottom attached segment" style="height: 350px;">
-                    <form class="ui form">
-                        <div class="field">
-                            <input type="text" id="register-email" placeholder="ایمیل">
+        <div class="ui container" style="width: 700px;">
+            <div class="ui two column grid">
+
+                <div class="column">
+                    <div class="ui container" style="width: 330px;">
+
+                        <div class="ui top attached tabular menu" id="menu">
+                            <a class="item active" onclick="registerOnClick()" id="register-item" style="width: 165px;">
+                                ثبت نام
+                            </a>
+                            <a class="item" onclick="loginOnClick()" id="login-item" style="width: 166px;">
+                                ورود
+                            </a>
                         </div>
-                        <div class="field">
-                            <input type="text" id="register-password" placeholder="رمز عبور">
-                        </div>
-                        <div class="field">
-                            <input type="text" id="register-password-confirmation" placeholder="نکرار رمز عبور">
-                        </div>
-                        <div class="field">
-                            <div class="ui checkbox">
-                                <label>قوانین و شرایط را می پذیرم.</label>
-                                <input type="checkbox" tabindex="0" class="hidden">
+
+                        <div id="register-box">
+                            <div class="ui bottom attached segment" style="height: 350px;">
+                                <form class="ui form">
+                                    <div class="field">
+                                        <input type="text" id="register-email" placeholder="ایمیل">
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" id="register-password" placeholder="رمز عبور">
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" id="register-password-confirmation"
+                                            placeholder="نکرار رمز عبور">
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui checkbox">
+                                            <label>قوانین و شرایط را می پذیرم.</label>
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                        </div>
+                                    </div>
+                                    <button class="ui button" id="register" type="submit">ثبت نام</button>
+                                </form>
                             </div>
                         </div>
-                        <button class="ui button" type="submit">ثبت نام</button>
-                    </form>
-                </div>
-            </div>
 
-            <div id="login-box" style="display: none;">
-                <div class="ui bottom attached segment" style="height: 350px;">
-                    <form class="ui form">
-                        <div class="field">
-                            <input type="text" id="login-email" placeholder="ایمیل">
+                        <div id="login-box" style="display: none;">
+                            <div class="ui bottom attached segment" style="height: 350px;">
+                                <form class="ui form">
+                                    <div class="field">
+                                        <input type="text" id="login-email" placeholder="ایمیل">
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" id="login-password" placeholder="رمز عبور">
+                                    </div>
+
+                                    <button class="ui button" id="login" type="submit">ثبت نام</button>
+                                </form>
+                            </div>
                         </div>
-                        <div class="field">
-                            <input type="text" id="login-password" placeholder="رمز عبور">
-                        </div>
 
-                        <button class="ui button" type="submit">ثبت نام</button>
-                    </form>
+                        <script>
+                            function loginOnClick() {
+                                document.getElementById("register-box").style.display = "none";
+                                document.getElementById("login-box").style.display = "block";
+                                document.getElementById("register-item").className = "item";
+                                document.getElementById("login-item").className = "item active";
+                            }
+
+                            function registerOnClick() {
+                                document.getElementById("register-box").style.display = "block";
+                                document.getElementById("login-box").style.display = "none";
+                                document.getElementById("register-item").className = "item active";
+                                document.getElementById("login-item").className = "item";
+                            }
+                        </script>
+
+                    </div>
+
                 </div>
+
+                <div class="column">
+                    <picture>
+                        <source media="(min-width: 1000px)", srcset="media/signup-hd.jpg">
+                        <img src="media/signup-sd.jpg" alt="Mind Light" , height="390px">
+                    </picture>
+                </div>
+
             </div>
-
-            <script>
-                function loginOnClick() {
-                    document.getElementById("register-box").style.display = "none";
-                    document.getElementById("login-box").style.display = "block";
-                    document.getElementById("register-item").className = "item";
-                    document.getElementById("login-item").className = "item active";
-                }
-
-                function registerOnClick() {
-                    document.getElementById("register-box").style.display = "block";
-                    document.getElementById("login-box").style.display = "none";
-                    document.getElementById("register-item").className = "item active";
-                    document.getElementById("login-item").className = "item";
-                }
-            </script>
-
         </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
