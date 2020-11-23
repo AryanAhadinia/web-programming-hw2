@@ -17,19 +17,83 @@
             direction: rtl;
         }
 
+        #infoBox {
+            width: 80vw;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 3px solid green;
+        }
+
+        #dataBox {
+            padding: 0px;
+            width: fit-content;
+            margin: 0px;
+        }
+
         .form-control {
+            width: 300px;
+
+        }
+
+        .col {
+            width: fit-content;
+        }
+
+        ul {
+            width: 300px;
+            margin: 0px;
+        }
+
+        button {
             width: 300px;
         }
 
+        #imgContainer {
+            position: relative;
+            text-align: center;
+            color: white;
+            width: fit-content;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #imgCol {
+            width: fit-content;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 150%;
+        }
+
+        header {
+            border: 3px solid green;
+        }
+
+        #homeButton {
+            font-size: 150%;
+            width: fit-content;
+            background-color: transparent;
+            border: none;
+            height: 100%;
+            margin-top: 50px;
+        }
+
+        @media screen and (min-width: 1250px) {
+            #infoBox {
+                width: 1000px;
+            }
+        }
 
         @media screen and (max-width: 600px) {
-
-            #infoBox {
-                width: 90%;
-            }
-
-            picture {
-                visibility: hidden;
+            #imgContainer {
+                display: none;
             }
         }
     </style>
@@ -37,10 +101,15 @@
 
 <body>
 
+    <header>
+        <img src="media/logo.png" alt="WebDev Logo">
+        <button id="homeButton" class="float-right" type="menu">بازگشت به خانه</button>
+    </header>
+
     <div class="containter" id="infoBox">
         <div class="row">
             <div class="col">
-                <div class="container">
+                <div class="container" id="dataBox">
                     <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="registerTab" data-toggle="tab" href="#registerBox" role="tab"
@@ -89,11 +158,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <picture>
-                    <source media="(min-width: 1000px)" , srcset="media/signup-hd.jpg">
-                    <img src="media/signup-sd.jpg" alt="Mind Light" , height="390px">
-                </picture>
+
+            <div class="col" id="imgCol">
+                <div class="container" id="imgContainer">
+                    <picture>
+                        <source media="(min-width: 1000px)" , srcset="media/signup-hd.jpg">
+                        <img src="media/signup-sd.jpg" alt="Mind Light" , height="390px">
+                    </picture>
+                    <div class="centered">
+                        به روشنی خورشید!!!
+                    </div>
+                </div>
             </div>
         </div>
 
