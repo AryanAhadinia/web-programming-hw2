@@ -16,10 +16,7 @@
         body {
             font-family: 'Shabnam', sans-serif;
             direction: rtl;
-        }
-
-        header {
-            border: 3px solid green;
+            background-color: #E99480;
         }
 
         #homeButton {
@@ -30,58 +27,30 @@
             margin-top: 70px;
         }
 
-        .col {
-            width: fit-content;
-            padding: 0px;
-            margin: 0px;
+        a {
+            color: #4c190d;
         }
 
-        #dataCol {
-            width: 300px;
-        }
+        table {
+            background-color: #E17055;
+            border-radius: 40px;
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: auto;
 
-        #box {
-            width: 80vw;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            border: 3px solid green;
-            padding: 5px;
-            background-color: lightgoldenrodyellow;
-            border-radius: 20px;
         }
 
-        #dataBox {
-            size: inherit;
-            margin: 0px;
-            padding: 0px;
+        img {
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
         }
 
-        ul {
-            width: 300px;
-            margin: auto;
-        }
-
-        .tab-content {
-            width: fit-content;
-            margin: auto;
-        }
-
-        .tab-pane {
-            width: fit-content;
-            margin: 0px;
-        }
-
-        form {
-            width: fit-content;
-            margin: 0px;
-        }
-
-        .form-group {
-            width: 300px;
-            margin-left: 0px;
-            margin-right: 0px;
+        #signup {
+            width: calc(80vw - 350px);
+            object-fit: cover;
         }
 
         .form-control {
@@ -99,13 +68,13 @@
             padding: 0px;
         }
 
-        picture {
-            size: initial;
+        th,
+        td {
+            padding: 25px;
         }
 
-        img {
-            size: inherit;
-            object-fit: cover;
+        #imgCell {
+            padding: 0px;
         }
 
         .centered {
@@ -113,18 +82,17 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 150%;
-        }
-
-        @media screen and (min-width: 1250px) {
-            #infoBox {
-                width: 1000px;
-            }
         }
 
         @media screen and (max-width: 600px) {
-            #imgCol {
+            #imgContainer {
                 display: none;
+            }
+        }
+
+        @media screen and (min-width: 1250px) {
+            #signup {
+                width: 650px;
             }
         }
     </style>
@@ -135,12 +103,13 @@
         <img src="media/logo.png" alt="WebDev Logo">
         <button id="homeButton" class="float-right" type="menu"><a href="/index.html">بازگشت به خانه</a></button>
     </header>
-    <div id="total">
-        <div class="containter" id="box">
-            <div class="row">
-                <div class="col" id="dataCol">
-                    <div class="container" id="dataBox">
-                        <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+
+    <table>
+        <tbody>
+            <tr>
+                <td id="dataContainter">
+                    <div class="container">
+                        <ul class="nav nav-pills nav-justified" id="tabsMenu" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="registerTab" data-toggle="tab" href="#registerBox"
                                     role="tab" aria-controls="registerBox" aria-selected="true">ثبت نام</a>
@@ -150,7 +119,7 @@
                                     aria-controls="login" aria-selected="false">ورود</a>
                             </li>
                         </ul>
-                        <div class="tab-content" id="myTabContent">
+                        <div class="tab-content" id="tabsMenuContent">
                             <div class="tab-pane fade show active" id="registerBox" role="tabpanel"
                                 aria-labelledby="registerTab">
                                 <form>
@@ -187,22 +156,22 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col" id="imgCol">
+                </td>
+                <td id="imgCell">
                     <div class="container" id="imgContainer">
                         <picture>
                             <source media="(min-width: 1000px)" , srcset="media/signup-hd.jpg">
-                            <img src="media/signup-sd.jpg" alt="Mind Light" , height="390px">
+                            <img id="signup" src="media/signup-sd.jpg" alt="Mind Light" height="400px">
                         </picture>
                         <div class="centered">
                             به روشنی خورشید!!!
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
