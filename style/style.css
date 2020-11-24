@@ -2,6 +2,8 @@ body {
     font-family: "Shabnam", sans-serif;
     direction: rtl;
     margin: 0px;
+    padding: 0px;
+    background-color: #f3c5ba;
 }
 
 .header {
@@ -117,10 +119,13 @@ body {
 .screen-section {
     display: flex;
     float: right;
+    align-items: stretch;
     height: 100%;
     width: 100%;
     margin-top: 100px;
     grid-gap: 0.5rem;
+    overflow-y: auto;
+    align-self: flex-start;
 }
 
 .main-section {
@@ -133,11 +138,15 @@ body {
     height: 100%;
     width: 100%;
     flex-grow: 1;
+    flex: 1;
     overflow: hidden;
     background-color: #f3c5ba;
     margin: 0;
     margin-right: 300px;
     padding: 50px;
+    overflow-y: auto;
+    align-self: flex-start;
+    align-items: stretch;
 }
 
 .card {
