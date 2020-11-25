@@ -2,12 +2,16 @@ body {
     font-family: "Shabnam", sans-serif;
     direction: rtl;
     margin: 0px;
-    padding: 0px;
     background-color: #f3c5ba;
+    width: fit-content;
+    height: fit-content;
 }
 
 .header {
     display: flex;
+    flex: 1;
+    right: 0px;
+    top: 0px;
     justify-content: space-between;
     margin: 0px auto;
     background-color: #e17055;
@@ -35,12 +39,12 @@ body {
 }
 .header-right li {
     display: inline-flex;
-    margin: 20px 50px;
+    margin: 20px 2rem;
 }
 
 .header-left li {
     display: inline-flex;
-    margin: 20px 50px;
+    margin: 20px 2rem;
 }
 
 .header ul li a {
@@ -63,10 +67,66 @@ body {
     transition: background-color 0.4s;
 }
 
+.footer {
+    visibility: hidden;
+    display: flex;
+    flex: 1;
+    right: 0px;
+    bottom: 0px;
+    justify-content: space-between;
+    margin: 0px auto;
+    background-color: #e17055;
+    height: 100px;
+    width: 100%;
+    font-size: 120%;
+    z-index: 9998;
+    position: fixed;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer-items {
+    display: flex;
+    flex: 1;
+    float: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 2%;
+}
+
+.footer-items li {
+    display: inline-flex;
+    margin: 20px auto;
+    transform: translateY(-18%);
+}
+
+.footer ul li a {
+    font-family: "Shabnam", sans-serif;
+    text-decoration: none;
+    color: white;
+    text-align: middle;
+    margin: auto;
+}
+
+.footer ul li a:link,
+.footer ul li a:visited {
+    border-bottom: 2px solid transparent;
+}
+
+.footer ul li a:hover,
+.footer ul li a:active {
+    color: #5a1e10;
+    border-bottom: 2px solid white;
+    transition: background-color 0.4s;
+}
+
 .logo {
-    height: 60px;
+    height: 80px;
     width: auto;
     float: right;
+    margin-top: 0;
+    margin-right: -20px;
+    transform: translateY(-18%);
 }
 
 .input-group-btn {
@@ -97,6 +157,7 @@ body {
     float: right;
     width: 300px;
     height: 100%;
+    right: 0px;
     background-color: #e99480;
     position: fixed;
 }
@@ -119,13 +180,10 @@ body {
 .screen-section {
     display: flex;
     float: right;
-    align-items: stretch;
     height: 100%;
     width: 100%;
-    margin-top: 100px;
+    margin: 100px 0;
     grid-gap: 0.5rem;
-    overflow-y: auto;
-    align-self: flex-start;
 }
 
 .main-section {
@@ -138,15 +196,11 @@ body {
     height: 100%;
     width: 100%;
     flex-grow: 1;
-    flex: 1;
     overflow: hidden;
     background-color: #f3c5ba;
     margin: 0;
     margin-right: 300px;
     padding: 50px;
-    overflow-y: auto;
-    align-self: flex-start;
-    align-items: stretch;
 }
 
 .card {
@@ -170,12 +224,15 @@ body {
 
 .data-section {
     display: flex;
-    width: 100%;
+    float: left;
+    flex-grow: 1;
+    justify-content: left;
+    flex: 1;
     height: 100%;
+    width: 100%;
     padding-top: 100px;
-    background-color: #f3c5ba;
-    float: right;
     row-gap: 2rem;
+    align-items: flex-start;
 }
 
 .data-table {
@@ -184,18 +241,17 @@ body {
     grid-template-columns: 90%;
     grid-auto-rows: minmax(min-content, max-content);
     row-gap: 0rem;
-    padding-top: 100px;
+    padding: 100px;
     width: 100%;
     height: 100%;
-    flex-grow: 1;
     margin-right: 300px;
-    justify-content: center;
+    overflow: hidden;
 }
 
 table,
 th,
 td {
-    border: 4px solid #4c190d;
+    border: 3px solid #4c190d;
     border-collapse: collapse;
     width: 100%;
     margin: 0px;
@@ -205,9 +261,8 @@ td {
 td,
 tr,
 th {
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-align: center;
-    font-size: 130%;
     font-weight: 900;
     color: black;
 }
@@ -227,7 +282,7 @@ th {
     color: white;
     font-size: 130%;
     font-weight: 900;
-    padding: 20px 60px;
+    padding: 20px auto;
 }
 
 .buttons-section {
@@ -249,10 +304,4 @@ th {
 .buttons-section button :active {
     background-color: #e17055;
     border-color: #e17055;
-}
-
-@media screen and (max-width: 1000px) {
-    .main-section {
-        grid-template-columns: auto auto auto;
-    }
 }
