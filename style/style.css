@@ -89,7 +89,7 @@ body {
     float: center;
     justify-content: space-between;
     list-style: none;
-    margin-right: 2%;
+    padding: 0;
 }
 
 .footer-items li {
