@@ -1,9 +1,15 @@
 .card {
     background-color: #e17055;
-    width: 100%;
+    width: auto;
     height: auto;
     color: white;
     font-weight: 800;
+    margin: auto;
+    padding: 0px;
+}
+
+.card-body {
+    padding: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -50,7 +56,7 @@
     th {
         padding: 15px 30px;
         text-align: center;
-        font-weight: 900;
+        font-weight: 500;
         color: white;
         font-size: 90%;
     }
@@ -63,10 +69,14 @@
     .incard-table-cell-right {
         text-align: right;
         background-color: transparent;
+        width: 150px;
+        padding: 5px 0px 5px 0px;
     }
     .incard-table-cell-left {
         text-align: left;
         background-color: transparent;
+        width: 50px;
+        padding: 5px 0px 5px 0px;
     }
 
     .buttons-section button {
@@ -78,6 +88,10 @@
 
     .card {
         margin: 15px 0px;
+    }
+
+    #incard-table {
+        width: fit-content;
     }
 }
 

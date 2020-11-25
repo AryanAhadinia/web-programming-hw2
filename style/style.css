@@ -232,7 +232,7 @@ table,
 th,
 td {
     overflow: auto;
-    table-layout: auto;
+    table-layout: fixed;
     border: 3px solid #4c190d;
     border-collapse: collapse;
     width: 100%;
@@ -246,11 +246,11 @@ table {
 td,
 tr,
 th {
-    padding: 2% 4%;
+    padding: 2% 0%;
     text-align: center;
     font-weight: 800;
     color: black;
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     width: max(max-content, 2000px);
 }
 
