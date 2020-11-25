@@ -35,6 +35,7 @@ body {
     list-style: none;
     margin-left: 2%;
 }
+
 .header-right li {
     display: inline-flex;
     margin: 20px 2rem;
@@ -53,13 +54,11 @@ body {
     margin: auto;
 }
 
-.header ul li a:link,
-.header ul li a:visited {
+.header ul li a:link, .header ul li a:visited {
     border-bottom: 2px solid transparent;
 }
 
-.header ul li a:hover,
-.header ul li a:active {
+.header ul li a:hover, .header ul li a:active {
     color: #5a1e10;
     border-bottom: 2px solid white;
     transition: background-color 0.4s;
@@ -106,13 +105,11 @@ body {
     margin: auto;
 }
 
-.footer ul li a:link,
-.footer ul li a:visited {
+.footer ul li a:link, .footer ul li a:visited {
     border-bottom: 2px solid transparent;
 }
 
-.footer ul li a:hover,
-.footer ul li a:active {
+.footer ul li a:hover, .footer ul li a:active {
     color: #5a1e10;
     border-bottom: 2px solid white;
     transition: background-color 0.4s;
@@ -175,6 +172,7 @@ body {
     margin-bottom: 10px;
     text-align: right;
 }
+
 .screen-section {
     display: flex;
     float: right;
@@ -227,9 +225,7 @@ body {
     overflow: hidden;
 }
 
-table,
-th,
-td {
+table, th, td {
     border: 3px solid #4c190d;
     border-collapse: collapse;
     width: 100%;
@@ -237,9 +233,7 @@ td {
     color: white;
 }
 
-td,
-tr,
-th {
+td, tr, th {
     padding: 15px 30px;
     text-align: center;
     font-weight: 900;
@@ -279,8 +273,7 @@ th {
     border-color: #5a1e10;
 }
 
-.buttons-section button :hover,
-.buttons-section button :active {
+.buttons-section button :hover, .buttons-section button :active {
     background-color: #e17055;
     border-color: #e17055;
 }
