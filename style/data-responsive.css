@@ -37,7 +37,7 @@
     }
     #Cardic {
         margin: auto;
-        width: 350px;
+        width: 300px;
     }
     .incard-table {
         background-color: transparent;
@@ -75,7 +75,7 @@
     .incard-table-cell-left {
         text-align: left;
         background-color: transparent;
-        width: 50px;
+        width: 100px;
         padding: 5px 0px 5px 0px;
     }
 
