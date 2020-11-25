@@ -38,12 +38,12 @@ body {
 
 .header-right li {
     display: inline-flex;
-    margin: 20px 2rem;
+    margin: 10px 2rem;
 }
 
 .header-left li {
     display: inline-flex;
-    margin: 20px 2rem;
+    margin: 10px 2rem;
 }
 
 .header ul li a {
