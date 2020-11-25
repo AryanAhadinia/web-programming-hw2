@@ -1,5 +1,9 @@
 .card {
-    background-color: #E17055;
+    background-color: #e17055;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-weight: 800;
 }
 
 @media screen and (max-width: 600px) {
@@ -16,7 +20,10 @@
     .footer {
         visibility: visible;
     }
-    #home-button, #data-button, .header-left, .data-section .side-bar {
+    #home-button,
+    #data-button,
+    .header-left,
+    .data-section .side-bar {
         display: none;
     }
     #Tabular {
@@ -24,23 +31,28 @@
     }
     #Cardic {
         margin: auto;
-        width: 350px
+        width: 350px;
     }
     .incard-table {
         background-color: transparent;
     }
-    table, th, td {
+    table,
+    th,
+    td {
         border: none;
         border-collapse: collapse;
         width: 100%;
         margin: 0px;
         color: white;
     }
-    td, tr, th {
+    td,
+    tr,
+    th {
         padding: 15px 30px;
         text-align: center;
         font-weight: 900;
-        color: black;
+        color: white;
+        font-size: 90%;
     }
     table tr:nth-child(even) {
         background-color: transparent;
@@ -56,8 +68,16 @@
         text-align: left;
         background-color: transparent;
     }
+
+    .buttons-section button {
+        padding: 2% 6%;
+        background-color: #5a1e10;
+        border-color: #5a1e10;
+        font-size: 3vw;
+    }
+
     .card {
-        margin-bottom: 50px;
+        margin: 15px 0px;
     }
 }
 
