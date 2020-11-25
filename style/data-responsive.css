@@ -1,24 +1,69 @@
+.card {
+    background-color: #E17055;
+}
+
 @media screen and (max-width: 600px) {
     .data-section {
         margin-right: 0%;
         width: 100%;
     }
-
     .data-table {
         margin-right: 0px;
     }
     .data-section .side-bar {
-        visibility: hidden;
+        display: none;
     }
-
     .footer {
         visibility: visible;
     }
+    #home-button, #data-button, .header-left, .data-section .side-bar {
+        display: none;
+    }
+    #Tabular {
+        display: none;
+    }
+    #Cardic {
+        margin: auto;
+        width: 350px
+    }
+    .incard-table {
+        background-color: transparent;
+    }
+    table, th, td {
+        border: none;
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0px;
+        color: white;
+    }
+    td, tr, th {
+        padding: 15px 30px;
+        text-align: center;
+        font-weight: 900;
+        color: black;
+    }
+    table tr:nth-child(even) {
+        background-color: transparent;
+    }
+    table tr:nth-child(odd) {
+        background-color: transparent;
+    }
+    .incard-table-cell-right {
+        text-align: right;
+        background-color: transparent;
+    }
+    .incard-table-cell-left {
+        text-align: left;
+        background-color: transparent;
+    }
+    .card {
+        margin-bottom: 50px;
+    }
+}
 
-    #home-button,
-    #data-button,
-    .header-left,
-    .data-section .side-bar {
-        visibility: hidden;
+@media screen and (min-width: 601px) {
+    #Cardic {
+        display: none;
+        margin: auto;
     }
 }

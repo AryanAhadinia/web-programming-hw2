@@ -21,3 +21,23 @@
         visibility: hidden;
     }
 }
+
+
+.card {
+    width: auto;
+    height: fit-content;
+    background-color: #5a1e10;
+    color: white;
+}
+
+.card :hover,
+.card :active {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    transition: box-shadow 0.3s;
+}
+
+.card :visited,
+.card :link {
+    box-shadow: 0 4px 8px 0 transparent, 0 6px 20px 0 transparent;
+    transition: box-shadow 0.3s;
+}
