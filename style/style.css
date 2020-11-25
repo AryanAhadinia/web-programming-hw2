@@ -15,7 +15,7 @@ body {
     background-color: #e17055;
     height: 100px;
     width: 100%;
-    font-size: 120%;
+    font-size: vw;
     z-index: 9999;
     position: fixed;
     padding: 20px 10px;

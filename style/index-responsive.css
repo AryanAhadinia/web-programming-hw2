@@ -9,35 +9,40 @@
         grid-template-columns: auto;
         margin-right: 0%;
     }
-
     .footer {
         visibility: visible;
     }
-
-    #home-button,
-    #data-button,
-    .header-left,
-    .side-bar {
+    #home-button, #data-button, .header-left, .side-bar {
         visibility: hidden;
     }
 }
 
-
 .card {
     width: auto;
-    height: fit-content;
-    background-color: #5a1e10;
-    color: white;
+    height: 200px;
 }
 
-.card :hover,
-.card :active {
+.card :hover, .card :active {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
     transition: box-shadow 0.3s;
 }
 
-.card :visited,
-.card :link {
+.card :visited, .card :link {
+    box-shadow: 0 4px 8px 0 transparent, 0 6px 20px 0 transparent;
+    transition: box-shadow 0.3s;
+}
+
+img {
+    object-fit: cover;
+    height: 200px;
+}
+
+img :hover, img :active {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    transition: box-shadow 0.3s;
+}
+
+img :visited, img :link {
     box-shadow: 0 4px 8px 0 transparent, 0 6px 20px 0 transparent;
     transition: box-shadow 0.3s;
 }
