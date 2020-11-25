@@ -152,7 +152,7 @@ body {
 
 .side-bar {
     display: inline-block;
-    float: right;
+    /* float: right; */
     width: 300px;
     height: 100%;
     right: 0px;
