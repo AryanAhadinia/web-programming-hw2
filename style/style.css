@@ -38,12 +38,12 @@ body {
 
 .header-right li {
     display: inline-flex;
-    margin: 10px 2rem;
+    margin: 10px 1rem;
 }
 
 .header-left li {
     display: inline-flex;
-    margin: 10px 2rem;
+    margin: 10px 1rem;
 }
 
 .header ul li a {
@@ -60,7 +60,6 @@ body {
 
 .header ul li a:hover, .header ul li a:active {
     color: #5a1e10;
-    border-bottom: 2px solid white;
     transition: background-color 0.4s;
 }
 
@@ -111,7 +110,6 @@ body {
 
 .footer ul li a:hover, .footer ul li a:active {
     color: #5a1e10;
-    border-bottom: 2px solid white;
     transition: background-color 0.4s;
 }
 
